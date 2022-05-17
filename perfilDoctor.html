@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Médicos</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="./calendar.js"></script>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+		  	<a class="navbar-brand" href="#">Médicos</a>
+		  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  		<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+			  		</li>
+			  		<li class="nav-item">
+						<a class="nav-link" href="perfil.html">Mi perfil</a>
+			  		</li>
+			  		<li class="nav-item">
+						<a class="nav-link" href="calendario.html">Calendario</a>
+			  		</li>
+			  		<li class="nav-item">
+						<a class="nav-link" href="preguntas.html">Preguntas</a>
+			  		</li>
+			  		<li class="nav-item">
+						<a class="nav-link" href="citasProximas.html">Citas próximas</a>
+			  		</li>
+			  		<li class="nav-item">
+						<a class="nav-link" href="historial.html">Historial</a>
+			  		</li>
+					<li class="nav-item">
+						<a class="btn btn-outline-danger ms-4" href="login.html">Cerrar sesión</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+					<button class="btn btn-outline-light" type="submit">Buscar</button>
+				</form>
+		  	</div>
+		</div>
+	</nav>
+	<div class="perfilDoctor">
+        <div class="row">
+			<div class="col-md-1">
+
+			</div>
+			<div class="col-md-5 p-3">
+				<div class="row p-3 bg-white text-dark rounded">
+					<div class="row">
+						<div class="col-md-3">
+							<img src="./img/doctor.jpg" class="img-fluid rounded-start profileDoctorImage" alt="...">
+						</div>
+						<div class="col-md-9">
+							<div class="row">
+								<h5>Dr. Adriana Sainz Antonia María</h5>
+							</div>
+							<div class="row">
+								<h6>Otorrinolaringología</h6>
+							</div>
+							<div class="row">
+								<p>Núm. Colegiado: CMP 24174 RNE 24589</p>
+							</div>
+							<div class="row text-center">
+								<div class="col-md-4">
+									<button class="btn btn-primary" type="button">Agendar cita</button>
+								</div>
+								<div class="col-md-4">
+									<button class="btn btn-light" type="button">Enviar mensaje</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row bg-white p-3 mt-3 text-dark rounded">
+					<h5>Consultorio</h5>
+					<hr>
+					<p>Próxima fecha: Mañana 16 mayo</p>
+					<p><a class="btn btn-primary" href="#" role="button">Mostrar calendario ></a></p>
+					<hr>
+					<p>Solo atiende pacientes privados en esta dirección</p>
+					<hr>
+					<p>Consulta online (descripción) - S/ 120</p>
+					<p>Interconsulta por salud ocupacional (descripción) - S/ 170</p>
+					<hr>
+					<p>Atiende a adultos, niños a partir de 8 años.</p>
+				</div>
+				<div class="row bg-white p-3 mt-3 text-dark rounded">
+					<h5>Experiencia</h5>
+					<hr>
+					<h6>Sobre mí</h6>
+					<p>Jefe del Servicio de Endocrinología del Hospital Nacional Hipólito Unanue. Especialista en constante capacitación con más de 11 años de experiencia en...</p>
+					<hr>
+					<h6>Enfermedades tratadas</h6>
+					<ul class="ps-5">
+						<li>Diabetes</li>
+						<li>Obesidad</li>
+						<li>Hipertiroidismo</li>
+					</ul>
+					<hr>
+					<h6>Formación</h6>
+					<ul class="ps-5">
+						<li>Universidad Nacional Federico Villarreal</li>
+						<li>Hospital Italiano de Buenos Aires - Rotación de Endocrinología pediátrica</li>
+						<li>Residentado Médico en Hospital Nacional Alberto Sabogal Sologuren</li>
+					</ul>
+					<hr>
+					<h6>Idiomas</h6>
+					<p>Español, Inglés</p>
+				</div>
+			</div>
+			<div class="col-md-4 p-3">
+				<div class="bg-white text-dark rounded">
+					<h5 class="bg-primary text-white p-3">Agendar cita</h5>
+					<div class="p-3">
+						<h6>Consulta online</h6>
+						<hr>
+						<p>Motivo de la visita</p>
+						<input type="text" class="form-control" placeholder="Consulta online">
+						<hr>
+						<p>Hora de cita</p>
+						<div class="calendar" id="calendar-3" data-mdb-default-view="week"></div>
+						<div class="row">
+							<div class="col-md-1 p-1">
+								<button class="btn btn-primary text-white rounded-circle text-center disabled" type="button"><</button>
+							</div>
+							<div class="col-md-2">
+								<p class="row p-1 m-1 text-center">Lun</p>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">15:30</button>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">16:00</button>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">15:30</button>
+							</div>
+							<div class="col-md-2">
+								<p class="row p-1 m-1 text-center">Mar</p>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">15:30</button>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">16:00</button>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">15:30</button>
+							</div>
+							<div class="col-md-2">
+								<p class="row p-1 m-1 text-center">Mié</p>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">15:30</button>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">16:00</button>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">15:30</button>
+							</div>
+							<div class="col-md-2">
+								<p class="row p-1 m-1 text-center">Jue</p>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">15:30</button>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">16:00</button>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">15:30</button>
+							</div>
+							<div class="col-md-2">
+								<p class="row p-1 m-1 text-center">Vie</p>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">15:30</button>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">16:00</button>
+								<button class="btn btn-primary text-white rounded text-center mt-1" type="button">15:30</button>
+							</div>
+							<div class="col-md-1 p-1">
+								<button class="btn btn-primary text-white rounded-circle text-center" type="button">></button>
+							</div>
+						</div>
+						<hr>
+						<div class="text-center">
+							<a class="text-center" href="#">Mostrar más horas</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
