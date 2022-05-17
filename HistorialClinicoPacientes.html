@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="#">Mi perfil</a>  
+                <a class="nav-link" href="#">Calendario</a>
+                <a class="nav-link" href="#">Preguntas</a>
+                <a class="nav-link" href="#">Citas proximas</a>
+                <a class="nav-link active" href="#">Historial</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container col-10">
+      
+      <div>
+        <div class="fs-2 ">Historias Clínicas de los Pacientes</div>
+      </div>
+      
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              David Villa Santiesteban
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div>Fecha de Nacimiento: 19/12/1970</div>
+                <div>Medico de Cabecera: Fabiola Pacheco Vargas</div>
+                <div>Especialidad: Cardiología</div>
+                <div>Diagnostico: Trombosis</div>
+                <div>Tratamiento: Consumir media pastilla de warfarina diariamente</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Enmanuel Solorzano Gutierrez
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div>Fecha de Nacimiento: 14/08/1986</div>
+              <div>Medico de Cabecera: Ramón Salas Arenas</div>
+              <div>Especialidad: Dermatología</div>
+              <div>Diagnostico: Micosis cutanea</div>
+              <div>Tratamiento: En proceso</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Cecilia Gamero Hinostroza
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div>Fecha de Nacimiento: 21/01/1961</div>
+                <div>Medico de Cabecera: Pedro Loyola Sanchez</div>
+                <div>Especialidad: Endocrinología</div>
+                <div>Diagnostico: Diabetes</div>
+                <div>Tratamiento: Insulina</div>
+              </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+</body>
+</html>
