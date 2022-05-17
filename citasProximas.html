@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Médicos - Citas próximas</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+		  	<a class="navbar-brand" href="#">Médicos</a>
+		  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  		<li class="nav-item">
+						<a class="nav-link" href="inicio.html">Inicio</a>
+			  		</li>
+			  		<li class="nav-item">
+						<a class="nav-link" href="perfil.html">Mi perfil</a>
+			  		</li>
+			  		<li class="nav-item">
+						<a class="nav-link" href="calendario.html">Calendario</a>
+			  		</li>
+			  		<li class="nav-item">
+						<a class="nav-link" href="preguntas.html">Preguntas</a>
+			  		</li>
+			  		<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="citasProximas.html">Citas próximas</a>
+			  		</li>
+			  		<li class="nav-item">
+						<a class="nav-link" href="historial.html">Historial</a>
+			  		</li>
+					<li class="nav-item">
+						<a class="btn btn-outline-danger ms-4" href="login.html">Cerrar sesión</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+					<button class="btn btn-outline-light" type="submit">Buscar</button>
+				</form>
+		  	</div>
+		</div>
+	</nav>
+	<div class="row p-3">
+        <div class="col-md-6">
+            <div class="bg-white rounded p-4 h-100">
+                <h2 class="pt-2 pb-2">Citas próximas:</h2>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center">#</th>
+                            <th scope="col" class="text-center">Motivo</th>
+                            <th scope="col" class="text-center">Doctor(a)</th>
+                            <th scope="col" class="text-center">Fecha</th>
+                            <th scope="col" class="text-center">Ver detalles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-secondary text-white">
+                            <th scope="row" class="text-center">1</th>
+                            <td>Dolor de estómago</td>
+                            <td>Dr. Mariano Quis...</td>
+                            <td>17/05/2022 16:00</td>
+                            <td class="text-center"><h5>></h5></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center">2</th>
+                            <td>Radiografía de rodilla</td>
+                            <td>Dra. Rocío Quint...</td>
+                            <td>23/05/2020 15:00</td>
+                            <td class="text-center"><h5>></h5></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center">3</th>
+                            <td>Chekeo trimestral</td>
+                            <td>Dr. Steven Stran...</td>
+                            <td>17/06/2020 18:00</td>
+                            <td class="text-center"><h5>></h5></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center">
+                    <a class="btn btn-primary ms-4" href="inicio.html">Reservar cita</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="bg-white rounded p-4">
+                <h2 class="pt-2 pb-2">Detalles de cita:</h2>
+                <h5>Motivo</h5>
+                <div class="form-control">
+                    Dolor de estómago
+                </div>
+                <h5 class="mt-3 mb-2">Doctor(a)</h5>
+                <div class="form-control">
+                    Dr. Marino Quispe Rodrigo Pablo
+                </div>
+                <h5 class="mt-3 mb-2">Fecha</h5>
+                <div class="form-control">
+                    17 de mayo de 2022
+                </div>
+                <h5 class="mt-3 mb-2">Hora</h5>
+                <div class="form-control">
+                    16:00
+                </div>
+                <h5 class="mt-3 mb-2">Tipo de cita</h5>
+                <div class="form-control">
+                    Presencial
+                </div>
+                <h5 class="mt-3 mb-2">Lugar</h5>
+                <div class="form-control">
+                    Hospital San Martín, Av. Atardecer 183, San Miguel
+                </div>
+                <div class="text-center mt-3">
+                    <button type="button" class="btn btn-danger">Cancelar cita</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row ps-3 pe-3">
+        <div class="col-md-12">
+            <div class="bg-white rounded p-4">
+                <h2 class="pt-2 pb-2">Historial de citas:</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center">#</th>
+                            <th scope="col" class="text-center">Motivo</th>
+                            <th scope="col" class="text-center">Doctor(a)</th>
+                            <th scope="col" class="text-center">Fecha</th>
+                            <th scope="col" class="text-center">Diagnóstico</th>
+                            <th scope="col" class="text-center">Medicinas recetadas</th>
+                            <th scope="col" class="text-center">Calificacion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-center">1</th>
+                            <td>Dolor de estómago</td>
+                            <td>Dr. Mariano Quis...</td>
+                            <td>17/05/2022 16:00</td>
+                            <td>Infección de estómago, tomar amoxicilina en mañana y noche.</td>
+                            <td>Amoxicilina 15g</td>
+                            <td class="text-center">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Calificar
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center">2</th>
+                            <td>Radiografía de rodilla</td>
+                            <td>Dra. Rocío Quint...</td>
+                            <td>23/05/2020 15:00</td>
+                            <td>Golpe en la sección superior de radio. Frotar Extenze cuando sienta dolor.</td>
+                            <td>Extenze gel 40g</td>
+                            <td class="text-center">&#11088;&#11088;&#11088;&#11088;&#10240;&#10240;</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center">3</th>
+                            <td>Chekeo trimestral</td>
+                            <td>Dr. Steven Stran...</td>
+                            <td>17/06/2020 18:00</td>
+                            <td>Nada grave, volver dentro de 3 meses.</td>
+                            <td>-</td>
+                            <td class="text-center">&#11088;&#11088;&#11088;&#11088;&#11088;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Calificar cita</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Atención recibida por Dr. Marino Quispe Rodrigo Pablo
+                    <br>
+                    <br>
+                    Rating:
+                    &#11088;&#11088;&#11088;&#11088;&#10240;&#10240;
+                    <br>
+                    <br>
+                    Puede brindarle comentarios adicionales a el(la) doctor(a):
+                    <input type="email" height="60" class="form-control mt-2" placeholder="Comentarios adicionales">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar calificación</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
