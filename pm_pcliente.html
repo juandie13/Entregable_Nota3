@@ -10,22 +10,22 @@
     <title>Document</title>
 </head>
 <body class="container">
+  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Inicio</a>
+          <a class="navbar-brand" href="/bienvenidos.html">Inicio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
+              <a class="nav-link active" href="/perfil_medico.html">Mi perfil</a>  
+              <a class="nav-link" href="/pantalla calendario.html">Calendario</a>
+              <a class="nav-link" href="/RealizarPreguntasPrivadasOPublicas.html">Preguntas</a>
               
-              <a class="nav-link" href="/perfil_medico.html">Mi perfil</a>  
-              <a class="nav-link" href="#">Calendario</a>
-              <a class="nav-link" href="#">Preguntas</a>
+              <a class="nav-link" href="/pantalla_proximas_citas.html">Citas proximas</a>
               
-              <a class="nav-link" href="#">Citas proximas</a>
-              
-              <a class="nav-link" href="#">Historial</a>
+              <a class="nav-link" href="HistorialdeConsultas.html">Historial</a>
             </div>
 
           </div>
@@ -62,7 +62,9 @@
                     <input type="text" class="form-control" placeholder="O" disabled>
                     
                   </div> 
-                  <button type="button" class="btn btn-primary">Historial Clinico</button>
+                  <button type="button" class="btn btn-primary">
+                    <a href="/HistorialClinicoPacientes.html" class="btn btn-primary ">Historial</a>
+                    </button>
             </div>
             
             <div class="col">
@@ -86,38 +88,38 @@
                         <label for="floatingTextarea"></label>
                       </div>
                   </div>
-                  <div class="mb-2">
+                  <div  id="receta" class="mb-2">
                     <label for="login" class="form-label">Receta</label>
-                    <div class="row pb-3">
-                      <div class="col">
-                        <input type="text" class="form-control" >
-                      </div>
-                      <div class="col">
-                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                          <option selected>Frecuencia</option>
-                          <option value="1">cada 4h</option>
-                          <option value="2">cada 8h</option>
-                          <option value="3">cada 12h</option>
-                        </select>
-                      </div>
-                    </div> 
-                    <div class="row pb-3">
-                      <div class="col">
-                        <input type="text" class="form-control" >
-                      </div>
-                      <div class="col">
-                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                          <option selected>Frecuencia</option>
-                          <option value="1">cada 4h</option>
-                          <option value="2">cada 8h</option>
-                          <option value="3">cada 12h</option>
-                        </select>
-                      </div>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Agregar medicina</button>
-                    <div class="row">
-                      
-                    </div>
+                  <div id="col_rec" >
+                              <div id="vaca1" class="row pb-3">
+                                <div class="col">
+                                  <input type="text" class="form-control" >
+                                </div>
+                                <div class="col">
+                                  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Frecuencia</option>
+                                    <option value="1">cada 4h</option>
+                                    <option value="2">cada 8h</option>
+                                    <option value="3">cada 12h</option>
+                                  </select>
+                                </div>
+                              </div> 
+                              <div id="vaca2" class="row pb-3">
+                                <div class="col">
+                                  <input type="text" class="form-control" >
+                                </div>
+                                <div class="col">
+                                  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Frecuencia</option>
+                                    <option value="1">cada 4h</option>
+                                    <option value="2">cada 8h</option>
+                                    <option value="3">cada 12h</option>
+                                  </select>
+                                </div>
+                              </div>
+                  </div>
+                    <button id="agregar" class="btn btn-primary" type="button">Agregar medicina</button>
+                   
                    
                     <div class="row pt-3">
                       <label for="login" class="form-label fs-4">Programar siguiente cita</label>
@@ -152,5 +154,6 @@
         
       
     </div>
+    <script src="/index_a.js"></script>
 </body>
 </html>
